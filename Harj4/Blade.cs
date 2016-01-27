@@ -13,7 +13,7 @@ namespace Harj4
         public string Color { get; set; }
         public override string ToString()
         {
-            return "Shoot: "+ Shoot + " Softness " + Softness+ " Color: " + Color;
+            return "Shoot: "+ Shoot + " Softness: " + Softness+ " Color: " + Color;
         }
     }
 }

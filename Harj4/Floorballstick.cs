@@ -11,36 +11,21 @@ namespace Harj4
         public string Name { get; set; }
         public string Model { get; set; }
         public string Height { get; set; }
-        public List<Grip>Gri { get; }
-        public Floorballstick()
-        {
-            Gri = new List<Grip>();
-        }
-        public void AddGrip(Grip grip)
-        {
-            Gri.Add(grip);
-        }
-        public override string ToString()
-        {
-            string sStick = "Stick name: " + Name + " Model: " + Model + " Grip: \n";
-            foreach (Grip grip in Gri)
-            {
-                sStick += grip.ToString() + "\n";
-            }
-            return sStick;
-        }
+         public string Flex { get; set; }
+        public string Color { get; set; }
+       
         public List<Blade> Bla { get; }
-
+        public Floorballstick()
         {
             Bla = new List<Blade>();
         }
-        public void AddGrip(Blade blade)
+        public void AddBlad(Blade blade)
         {
             Bla.Add(blade);
         }
         public override string ToString()
         {
-            string sStick = "Stick name: " + Name + " Model: " + Model + " Grip\n";
+            string sStick = "Stick name: " + Name + " Model: " + Model + " Height: " + Height + " Flex: " + Flex + " Grip color:  " + Color + " Grip\n";
             foreach (Blade blade in Bla)
             {
                 sStick += blade.ToString() + "\n";
